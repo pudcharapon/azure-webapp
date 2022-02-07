@@ -12,7 +12,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "myresourcegroup" {
-  name     = "${var.prefix}-workshop"
+  name     = "${var.prefix}-webapp"
   location = var.location
 
   tags = {
@@ -103,7 +103,7 @@ resource "azurerm_public_ip" "catapp-pip" {
 }
 
 resource "azurerm_virtual_machine" "catapp" {
-  name                = "${var.prefix}-meow"
+  name                = "${var.prefix}-webapp"
   location            = var.location
   resource_group_name = azurerm_resource_group.myresourcegroup.name
   vm_size             = var.vm_size
