@@ -11,7 +11,9 @@ cat << EOM > /var/www/html/index.html
   <!-- BEGIN -->
   <center><img src="http://${PLACEHOLDER}/${WIDTH}/${HEIGHT}"></img></center>
   <center><h2>Peterp shoppingmall</h2></center>
-  Welcome to ${PREFIX}'s app. Replace this text with your own. 
+  Welcome to ${PREFIX}'s app. We are the best shopping mall in the world. 
+
+  This is test web instance on Azure!!
   <!-- END -->
   
   </div>
